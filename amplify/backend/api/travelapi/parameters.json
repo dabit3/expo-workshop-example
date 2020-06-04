@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "travelapi",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authexpoamplify9a1ba59e",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

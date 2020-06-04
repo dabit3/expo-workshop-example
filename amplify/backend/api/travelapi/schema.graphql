@@ -1,0 +1,11 @@
+type Post @model
+  @auth(rules: [
+    { allow: owner, operations: [create, delete, update] }
+  ]) {
+  id: ID!
+  name: String!
+  description: String
+  location: String
+  image: String
+  owner: String
+}

@@ -3,8 +3,8 @@ import * as Linking from 'expo-linking';
 export default {
   prefixes: [Linking.makeUrl('/')],
   config: {
-    Root: {
-      path: 'root',
+    Home: {
+      path: 'home',
       screens: {
         Home: 'home',
         Links: 'links',
